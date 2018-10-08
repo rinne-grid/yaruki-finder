@@ -1,0 +1,17 @@
+version: '3.6'
+services:
+  dev:
+    image: centos:centos7
+    build: ./dev
+    privileged: true
+    working_dir: /app
+    ports:
+      - "3000:3000"
+      - "8888:80"
+    volumes:
+      # - dev-data:/app
+      - .:/app
+
+# volumes:
+#   dev-data:
+#     driver: local

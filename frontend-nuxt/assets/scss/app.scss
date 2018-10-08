@@ -1,0 +1,275 @@
+$nav-color                : #3498db;
+$nav-hover-bottom-color   : #455A64;
+$nav-hover-color          : #2980b9;
+
+$page-sidebar-color       : #E5E5E5;
+
+$circle-icon-size         : 48px;
+$circle-icon-contents-size: 44px;
+$circle-icon-color        : #FFF;
+$circle-icon-hover-color  : #16a085;
+
+#app {
+  font-family: 'Rounded Mplus 1c';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+html, body {
+  background-color: #f7f9fc;
+  height: 100%;
+}
+
+.page-header {
+  display:flex;
+  flex-flow: row;
+  background-color: $nav-color;
+  //box-shadow: 1px 1px 2px;
+
+  .logo {
+    padding: 20px 30px;
+  }
+
+  .logo a {
+    color: #FFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.1s;
+  }
+
+  .logo a:hover {
+    transition: all 0.1s;
+    color: #2980b9;
+  }
+
+  &>:last-child {
+    margin-left: auto;
+  }
+}
+
+.page-header .logo {
+
+}
+
+.page-line {
+  //margin-top: 2px;
+}
+
+.nav-menu {
+  ul {
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  a {
+    color: #FFF;
+    border-bottom: 4px solid $nav-color;
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+    padding: 14px 10px;
+    transition: all 0.2s;
+  }
+
+  a:hover {
+    border-bottom: 4px solid $nav-hover-bottom-color;
+    background-color: $nav-hover-color;
+    transition: all 0.2s;
+  }
+
+  li {
+    text-align: center;
+    position: relative;
+  }
+}
+
+.nav-end {
+  @extend .nav-menu;
+  cursor: pointer;
+
+  li > a {
+    width: 150px;
+    background-color: $nav-color;
+
+  }
+  li:hover > a {
+    background-color: $nav-hover-color;
+    border-bottom-color: $nav-hover-color;
+  }
+  ul {
+
+    justify-items: flex-end;
+    i {
+    }
+  }
+  li ul {
+    flex-flow: column;
+
+    top: 72px;
+    left: 0;
+    position: absolute;
+
+    li {
+      overflow: hidden;
+      height: 0;
+      transition: 0.2s;
+
+      ul {
+        top: 0;
+        left: 110px;
+      }
+    }
+
+  }
+
+  li:hover > ul > li {
+    overflow: visible;
+    height: 72px;
+  }
+}
+
+.page-main {
+  display: flex;
+}
+
+.page-sidebar {
+  width: 80px;
+  height: 90.5vh;
+  background-color: $page-sidebar-color;
+  text-align: center;
+  padding-top: 10px;
+
+  i {
+  }
+
+  .circle-icon-base > a {
+    background-color: #FFF;
+    font-size:      30px;
+    border-radius:  $circle-icon-size;
+    border:         1px solid #16a085;
+    width:          $circle-icon-size;
+    height:         $circle-icon-size;
+    margin-left:    auto;
+    margin-right:   auto;
+    margin-bottom:  10px;
+    display:        block;
+    line-height:    $circle-icon-contents-size;
+    cursor:         pointer;
+    color: $circle-icon-hover-color;
+    transition: all 0.2s;
+    text-decoration: none;
+    
+    
+    &:hover {
+      color: #FFF;
+      background-color: $circle-icon-hover-color;
+    }
+
+
+
+
+    .material-icons {
+      line-height: 50px;
+    }
+  }
+
+}
+
+
+.page-contents {
+  width: 100%;
+}
+
+.page-footer {
+  height: 10vh;
+  background-color: #212121;
+}
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+.login-form {
+  background-color: #FFF;
+  border-radius: 4px;
+  height: 300px;
+  margin-top: 30px;
+  padding: 20px 30px;
+
+}
+
+.login-form-title {
+  font-size: 1.4rem;
+
+}
+
+.login-form-component {
+  margin-top: 10px;
+
+}
+
+.regist-new-user-block {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  text-align: right;
+  a {
+
+    text-decoration: none;
+    color: #2c3e50;
+  }
+}
+
+.login-input {
+  border: none;
+  border-bottom: 1px solid #AAA;
+  background-color: #FFF;
+  width: 320px;
+  font-size: 1.2rem;
+
+}
+
+.auth-button {
+  margin-top: 40px;
+  background-color: #1abc9c;
+  color: #FFF;
+  border: none;
+  width: 320px;
+  height: 40px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #16a085;
+  }
+}
+
+.error-message {
+  margin-top: 10px;
+  color: #e74c3c;
+}
+
+.success {
+  color: #2ecc71;
+}
+
+.critical {
+  color: #e74c3c;
+}
+
+.warning {
+  color: #e67e22;
+}
+
+
+.my-modal-title {
+  display :flex;
+
+  .material-icons {
+    margin-top: -10px;
+  }
+}

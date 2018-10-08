@@ -1,0 +1,90 @@
+h2 {
+  margin-left: 30px;
+}
+.env-area {
+  display: flex;
+  flex-flow: row;
+  padding-left: 30px;
+}
+
+.env-header {
+  display: flex;
+  flex-flow: column;
+}
+
+.env-base-box {
+  color: #FFF;
+  line-height: 150px;
+  height: 150px;
+  width: 200px;
+  background-color: #CCC;
+  border-radius: 5px;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.env-box-color-1 {
+  background-color: #16A085;
+}
+
+.env-box-color-2 {
+  background-color: #27AE60;
+}
+
+.env-box-color-3 {
+  background-color: #3498DB;
+}
+
+.env-box-color-4 {
+  background-color: #2980B9;
+}
+
+.list-box-add {
+  text-align: center;
+  color: #555555;
+  background-color: #EAEAEA;
+  cursor: pointer;
+  transition: all .2s;
+  border-radius: 6px;
+  width: 60px;
+  margin-left: 20px;
+
+  &:hover {
+    background-color: #FFCC80;
+    color: #FFF;
+    transition: all .2s;
+  }
+}
+
+.list-box-mark {
+  margin-top: 250px;
+  font-size: 3.0rem;
+}
+.list-box-explain {
+  font-size: 1.6rem;
+
+}
+
+.button-area {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.auth-button {
+  width: 180px;
+  margin-right: 20px;
+  transition: 0.2s all;
+}
+.clear-button {
+  background-color: #e74c3c;
+
+  &:hover {
+    background-color: #c0392b;
+  }
+}
+
+.show {
+  transition: 0.4s all;
+  opacity: 1;
+}
